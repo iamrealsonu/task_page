@@ -1,0 +1,63 @@
+/* manual css */
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+header{
+    background-color: #186ca3;
+    padding: 1%;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #fff;
+}
+.task-container{
+    background-color:#e3e4e6;
+    padding: 10px;
+}
+.task-card{
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px 0;
+}
+.task-list{
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px 0;
+}
+.form-group{
+    margin: 10px 0;
+}
+.create-task-btn{
+   background-color:orange;
+    border-radius: 9px;
+}
+.create-task-btn:hover{
+    background-color: green;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* media query */
+@media only screen and (min-width:300px) and (max-width:768px){
+   
+    header{
+        font-size: 25px;
+        text-align: center;
+    }
+    .task-list .row{
+        font-size: 0.75rem;
+    }
+    .task-list .row button{
+        font-size: 0.75rem;
+        width: 70px;
+
+    }
+
+}
+@media only screen and (min-width:768px) and (max-width:991px){
+ .task-list .row{
+    font-size: 0.8rem;
+ }
+
+}
