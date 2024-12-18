@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./task.css">
+</head>
+<body>
+    <header>Project Management App</header>
+    <div class="container">
+        <div class="row justify-content-around">
+            <div class="col-10 task-container">
+                <h4>Board Name:My Board</h4>
+                <p>Project Name:My Project</p>
+               <!-- task forum started -->
+
+                <div class="task-card">
+                    <form action="" id="task-form" name="taskEditForm" onsubmit="saveTask()">
+                        <div class="row row-cols-1 row-cols-md-2">
+                            <div class="col">
+                                <label for="taskName">Task Name</label>
+                                <input type="text" class="form-control" id="taskName" aria-describedby="emailHelp" placeholder="Enter task name">
+                            </div>
+                            <div class="col">
+                                <label for="assignee">Assignee</label>
+                                <select class="form-select" id="assignee">
+                                    <option selected>select one assignee</option>
+                                    <option value="1">Mark</option>
+                                    <option value="2">Theo</option>
+                                    <option value="3">Rocky</option>
+                                </select>
+                            </div>
+
+                        </div>
+                        <div class="row row-cols-1 row-cols-md-2">
+                            <div class="col">
+                                <label for="startDate" class="label-text"></label>
+                                <input type="date" class="form-control" id="startDate" required value="28-12-2024">
+                            </div>
+                            <div class="col">
+                                <label for="endDate" class="label-text"></label>
+                                <input type="date" class="form-control" id="endDate" required value="28-20-2024">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="isTaskComplete">
+                                <label for="isTaskComplete" class="form-check-label">Task Completed</label>
+                            </div>
+                        </div>
+                        <button class="btn create-task-btn" >Add Task</button>
+                    </form>
+
+                </div>
+
+                <!-- task forum ended -->
+
+                <!-- task list started -->
+                <div class="task-list">
+                    <div class="row row-cols-3 row-cols-md-6 " >
+                        <div class="col">
+                            Task Name 
+                            <p><b>Sample Task 1</b></p>
+                        </div>
+                        <div class="col">
+                            Start Date
+                            <p><b>01/12/2024</b></p>
+                        </div>
+                        <div class="col">
+                            End Date
+                            <p><b>30/12/2024</b></p>
+                        </div>
+                        <div class="col">
+                            Completed Status
+                            <p><b>YES</b></p>
+                        </div>
+                        <div class="col hidden-xs">
+                            <button class="btn btn-success">Edit</button>
+                        </div>
+                        <div class="col hidden-xs">
+                            <button class="btn btn-danger">Delete</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="task-list">
+                    <div class="row row-cols-3 row-cols-md-6">
+                        <div class="col">
+                            Task Name 
+                            <p><b>Sample Task 2</b></p>
+                        </div>
+                        <div class="col">
+                            Start Date
+                            <p><b>01/12/2024</b></p>
+                        </div>
+                        <div class="col">
+                            End Date
+                            <p><b>30/12/2024</b></p>
+                        </div>
+                        <div class="col">
+                            Completed Status
+                            <p><b>YES</b></p>
+                        </div>
+                        <div class="col hidden-xs">
+                            <button class="btn btn-success">Edit</button>
+                        </div>
+                        <div class="col hidden-xs">
+                            <button class="btn btn-danger">Delete</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- task list ended -->
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
